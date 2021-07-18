@@ -3,11 +3,14 @@ from random import choice
 
 
 def challenge_builder_simples_tenses_verb():
+    # Preenche as variaveis com um dado da lista
     simple_tenses = choice(['Preset', 'Past', 'Future'])
     typ = choice(['Phrase', 'Question'])
     pronouns = choice(['I', 'You', 'He', 'She', 'It', 'We', 'They'])
 
+    # Captura os verbos do arquivo csv
     with open('100_verbs.csv') as file_csv:
+        # Seleciona um dos itens da lista com todos os verbos (exceto os com x no [1])
         verbs = choice([line for line in csv.reader(file_csv) if not line[1] == 'x'])
 
     print(
