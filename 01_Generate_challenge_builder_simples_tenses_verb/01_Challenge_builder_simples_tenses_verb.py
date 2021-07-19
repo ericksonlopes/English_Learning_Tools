@@ -21,4 +21,4 @@ def challenge_builder_simples_tenses_verb():
     )
 
 
-[challenge_builder_simples_tenses_verb() for item in range(10)]
+[(challenge_builder_simples_tenses_verb(), input()) for item in range(10)]
