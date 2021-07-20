@@ -32,9 +32,9 @@ def challenge_generator():
 
     elif simple_tense == 'Past':
         if aff_neg:
-            print(f'did {pronoun} {verbs[0]}?')
+            print(f'did {pronoun} {verbs[0]}({verbs[1]})?')
         else:
-            print(f'didn\'t {pronoun} {verbs[0]}?')
+            print(f'didn\'t {pronoun} {verbs[0]}({verbs[1]})?')
 
         correct_aff = f'{pronoun} {verbs[1]}'
         correct_neg = f'{pronoun} didn\'t {verbs[0]}'
@@ -64,3 +64,7 @@ how_many_times = int(input('How often do you want to practice? '))
 for item in range(0, how_many_times):
     print('\n')
     challenge_generator()
+
+    # duolingo
+    # babbel
+    # busuu
