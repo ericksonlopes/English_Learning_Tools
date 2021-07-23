@@ -55,6 +55,7 @@ else:
 
 
 how_many_times = int(input('How often do you want to practice? '))
+print()
 
 for item in range(0, how_many_times):
     with open('100_verbs.csv') as file_csv:
@@ -67,7 +68,7 @@ for item in range(0, how_many_times):
 
     # Dicionario que recebe todas os tempos verbais
     completed_time = {}
-    print()
+
     for line in tqdm.tqdm(search_box):
         try:
             # Recebe todos os pronomes
